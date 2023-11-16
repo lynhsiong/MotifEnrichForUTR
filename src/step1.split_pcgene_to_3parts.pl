@@ -22,7 +22,7 @@ while(<IN>){
   }
 }
 
-$outtype="UTR3"  ### UTR5 or UTR3 or CDS
+$outtype="UTR3";  ### UTR5 or UTR3 or CDS
 foreach $key (keys %hash_fa){
   if(defined $hash_pos{$key}{$outtype}){
      @tmppos=@{$hash_pos{$key}{$outtype}};
